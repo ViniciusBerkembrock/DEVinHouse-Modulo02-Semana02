@@ -1,0 +1,108 @@
+body {
+  margin: 0;
+}
+
+.cabecalho {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  width: auto;
+  padding-left: 16.6vw;
+  padding-right: 16.6vw;
+  background-color: #52493a;
+}
+.cabecalho .logo {
+  color: white;
+  font-size: 30px;
+  transition: 2s;
+}
+.cabecalho .logo:hover {
+  transform: scale(1.1);
+}
+.cabecalho nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.cabecalho nav .optionsNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 110px;
+  border-top: 4px solid #52493a;
+  border-bottom: 4px solid #52493a;
+  margin: 10px;
+  transition: 0.4s;
+}
+.cabecalho nav .optionsNav a {
+  text-decoration: none;
+  color: white;
+}
+.cabecalho nav .optionsNav:hover {
+  border-bottom: 4px solid #de733e;
+  background-color: rgba(82, 73, 58, 0.9921568627);
+  transform: scale(1.05);
+}
+
+.row .titulo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  margin-top: 50px;
+}
+.row .anuncio {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.row .anuncio img {
+  width: 400px;
+}
+.row .anuncio .dadosVenda {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: left;
+  height: 300px;
+  margin-left: 30px;
+}
+.row .anuncio .dadosVenda h6 {
+  color: rgb(126, 126, 126);
+}
+.row .anuncio .dadosVenda h6 spam {
+  color: #007c25;
+}
+.row .anuncio .dadosVenda h6 a {
+  text-decoration: none;
+  color: rgb(126, 126, 126);
+}
+.row .anuncio .dadosVenda h6 a:hover {
+  text-decoration: underline;
+}
+.row .anuncio .dadosVenda .valor {
+  font-size: 35px;
+  color: #de733e;
+  font-weight: 700;
+}
+
+.buttons {
+  margin-bottom: 40px;
+}
+.buttons .btn-lg {
+  width: 400px;
+}
+
+.form-group {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+/*# sourceMappingURL=index.css.map */

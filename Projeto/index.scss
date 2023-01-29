@@ -1,0 +1,111 @@
+$corTexto: black;
+$corTextoContraste: white;
+$paleta01: #52493a;
+$paleta02: #7c8569;
+$paleta03: #a4ab80;
+$paleta04: #e8e0ae;
+$paleta05: #de733e;
+
+@mixin flexBox($direction ,$justify, $aling){
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify;
+    align-items: $aling;
+}
+
+@mixin size($height, $width) {
+    height: $height;
+    width: $width;
+}
+
+body{
+    margin: 0;
+}
+
+.cabecalho{
+    @include flexBox(row, space-between, center);
+    @include size(100px, auto);
+    padding-left: 16.6vw;
+    padding-right: 16.6vw;
+    background-color: $paleta01;
+    .logo{
+        color: $corTextoContraste;
+        font-size: 30px;
+        transition: 2s;
+    }
+    .logo:hover{
+        transform: scale(1.1);
+    }
+    nav {
+        @include flexBox(row, center, center);
+        .optionsNav{
+            @include flexBox(row, center, center);
+            @include size(40px, 110px);
+            border-top: 4px solid $paleta01;
+            border-bottom: 4px solid $paleta01;
+            margin: 10px;
+            transition: 0.4s;
+            a {
+                text-decoration: none;
+                color: $corTextoContraste;
+            } 
+        }
+        .optionsNav:hover{
+            border-bottom: 4px solid #de733e;
+            background-color: #52493afd;
+            transform: scale(1.05);
+        }
+    }
+}
+
+.row{
+    .col-8{
+    }
+    .titulo{
+        @include flexBox(column, center , left);
+        margin-top: 50px;
+    }
+    .anuncio{
+        @include flexBox(row, left, center);
+        margin-bottom: 20px;
+        img{
+            width: 400px ;
+
+        }
+        .dadosVenda{
+            @include flexBox(column,center , left);
+            height: 300px;
+            margin-left: 30px;
+            h6{
+                color: rgb(126, 126, 126);
+                spam{
+                    color: #007c25;
+                }
+                a{
+                    text-decoration: none;
+                    color: rgb(126, 126, 126);
+                }
+                a:hover{
+                    text-decoration: underline;
+                }
+            }
+            .valor {
+                font-size: 35px;
+                color: #de733e;
+                font-weight: 700;
+            }
+        }
+    }
+}
+
+.buttons{
+    margin-bottom: 40px;
+    .btn-lg {
+        width: 400px;
+    }
+}
+
+.form-group{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
